@@ -1,0 +1,34 @@
+<DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<title>copiador</title>
+</head>
+<body>
+	<script>
+
+	//var nombre;
+
+	
+	// Esto nos manda una alerta en pantalla
+	// alert(nombre);
+
+	//nombre = prompt("Ingresa tu nombre");
+	//edad = prompt("Ingresa la edad");
+
+	//document.write(nombre + "<br>" + "Tu edad es: " + "<h1>" + edad + "</h2>");
+
+	var youtubeurl = prompt("Ingresa URL youtube");
+	if(youtubeurl.indexOf('=')>0)
+	{
+		var getString = youtubeurl.split('=')[1]
+		//document.write(getString);
+
+		document.write('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+getString+'" frameborder="0" allowfullscreen></iframe>')
+	}
+	
+
+
+	</script>
+</body>
+</html>
